@@ -1,4 +1,25 @@
 Aqui vou colocar os comandos que forem usados nas aulas, para configuração do ORM
 
+Acessar MYSQL pelo terminal:
+mysql -h localhost -u root -p
+Colocar a senha do usuário root do MYSQL, não do Linux
+
+mysql      -- evocamos o servidor
+-h         -- dizemos que o próximo dado é referente ao host
+localhost  -- informamos o o host
+-u         -- dizemos que o próximo dado é referente ao usuário
+root       -- informamos o usuário
+-p         -- dizemos que o próximo dado é referente a senha
+
+
+use escola_ingles;  --Altera para o BD especificado
+
+show tables; --Mostra as tabelas
+
+describe Pessoas; --Mostra detalhes da tabela
+
 Criando modelos:
 npx sequelize-cli model:generate --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
+
+Rodando Migrações:
+npx sequelize-cli db:migrate
