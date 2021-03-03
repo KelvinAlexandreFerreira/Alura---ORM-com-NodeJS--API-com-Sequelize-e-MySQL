@@ -1,0 +1,4 @@
+Aqui vou colocar os comandos que forem usados nas aulas, para configuração do ORM
+
+Criando modelos:
+npx sequelize-cli model:generate --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
