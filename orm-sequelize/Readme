@@ -23,3 +23,8 @@ npx sequelize-cli model:generate --name Pessoas --attributes nome:string,ativo:b
 
 Rodando Migrações:
 npx sequelize-cli db:migrate
+
+Populando o banco:
+npx sequelize-cli seed:generate --name demo-pessoa
+
+npx sequelize-cli db:seed:all
